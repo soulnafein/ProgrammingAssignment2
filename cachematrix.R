@@ -1,7 +1,8 @@
-## Put comments here that give an overall description of what your
-## functions do
+## Functions to create a Matrix object with
+## cacheable operations
 
-## Write a short comment describing this function
+## Constructor function to create a "special"
+## matrix object
 
 makeCacheMatrix <- function(x = matrix()) {
   inverse <- NULL
@@ -14,8 +15,7 @@ makeCacheMatrix <- function(x = matrix()) {
   list(set=set, get=get, setInverse=setInverse, getInverse=getInverse)
 }
 
-
-## Write a short comment describing this function
+## Function that calculates inverse for a "special" matrix
 
 cacheSolve <- function(x, ...) {
   inverse <- x$getInverse()
